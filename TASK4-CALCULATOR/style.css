@@ -1,0 +1,97 @@
+body{
+	background-color: black;
+}
+ h1{
+	text-align: center;
+	margin-top: 10px;
+	color:white;
+	font-size: 50px;
+ }
+ .container{
+	width: 352px;
+    border-radius: 20px;
+    padding-left: 15px;
+	justify-content: center;
+    border: 2px solid rgb(126, 115, 115);
+    height: 510px;
+    background-color: paleturquoise;
+	margin-left: 39%;
+	margin-top: 5%;
+	padding-left: 0px;
+	padding-right: 4px;
+	margin-top: 10px;
+  }
+
+  .calculator-grid {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+	border: 50px;
+	margin-top: -100px;
+	
+  }
+  
+  .calculator-grid > button {
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid white;
+	border-radius:  25%;
+	margin-left: 5px;
+	margin-top: 5px;
+	outline: none;
+	background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+	background-color: rgba(223, 217, 217, 0.9);
+  }
+  
+  .span-two {
+	grid-column: span 2;
+  }
+  
+  .output {
+	height: 80px;
+	margin-top: 100px;
+	grid-column: 1 / -1;
+	background-color: rgb(55, 160, 160);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 6px;
+	word-wrap: break-word;
+	word-break: break-all;
+	border-radius: 20px;
+  }
+  
+  .output .previous-operand {
+	color: rgba(255, 255, 255, .75);
+	font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+	color: white;
+	font-size: 2.5rem;
+  }
+
+  h2{
+	font-family: 'Ms Madi';
+  }
+  *, *::before, *::after {
+	box-sizing: border-box;
+	font-family: Gotham Rounded, sans-serif;
+	font-weight: normal;
+}
+h6{
+	text-align: center;
+	margin-top: 14px;
+	font-weight: bold;
+	font-size: 13px;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	color: white;
+ }
